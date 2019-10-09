@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using load reacjs file" />
+  <title>React App</title>
+
+  <style>
+    body {
+      font: 14px "Century Gothic", Futura, sans-serif;
+      margin: 20px;
+    }
+
+    ol,
+    ul {
+      padding-left: 30px;
+    }
+
+    .board-row:after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+
+    .status {
+      margin-bottom: 10px;
+    }
+
+    .square {
+      background: #fff;
+      border: 1px solid #999;
+      float: left;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 34px;
+      height: 34px;
+      margin-right: -1px;
+      margin-top: -1px;
+      padding: 0;
+      text-align: center;
+      width: 34px;
+    }
+
+    .square:focus {
+      outline: none;
+    }
+
+    .kbd-navigation .square:focus {
+      background: #ddd;
+    }
+
+    .game {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .game-info {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="index.js" type="text/babel"></script>
+</body>
+
+</html>
